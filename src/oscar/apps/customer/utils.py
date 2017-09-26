@@ -3,7 +3,7 @@ import logging
 from django.conf import settings
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage, EmailMultiAlternatives
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 

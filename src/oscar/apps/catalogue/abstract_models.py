@@ -9,10 +9,10 @@ from django.contrib.staticfiles.finders import find
 from django.core.cache import cache
 from django.core.exceptions import ImproperlyConfigured, ValidationError
 from django.core.files.base import File
-from django.core.urlresolvers import reverse
 from django.core.validators import RegexValidator
 from django.db import models
 from django.db.models import Count, Sum
+from django.urls import reverse
 from django.utils import six
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.functional import cached_property
