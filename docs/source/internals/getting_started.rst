@@ -87,12 +87,6 @@ context processors.
         },
     ]
 
-.. attention::
-
-   Before Django 1.8 this setting was split between
-   ``TEMPLATE_CONTEXT_PROCESSORS`` and ``TEMPLATE_DIRS``.
-
-
 Next, modify ``INSTALLED_APPS`` to be a list, add ``django.contrib.sites``,
 ``django.contrib.flatpages``, and ``widget_tweaks`` and append
 Oscar's core apps. Also set ``SITE_ID``:
@@ -133,7 +127,7 @@ More info about installing ``flatpages`` is in the `Django docs`_.
 
 Next, add ``oscar.apps.basket.middleware.BasketMiddleware`` and
 ``django.contrib.flatpages.middleware.FlatpageFallbackMiddleware`` to
-your ``MIDDLEWARE`` setting (``MIDDLEWARE_CLASSES`` for Django 1.8).
+your ``MIDDLEWARE`` setting.
 
 .. code-block:: django
 
