@@ -20,8 +20,8 @@ Compatibility
 -------------
 
 Oscar 1.6 is compatible with Django 1.11 and 2.0 as well as Python 2.7, 3.4,
-3.5 and 3.6. Django 1.8 is no longer supported, inline with the upstream
-advice.
+3.5 and 3.6. Django 1.8 is no longer supported, in line with the Django
+project recommendation.
 
 
 .. _new_in_1.6:
@@ -63,5 +63,5 @@ Backwards incompatible changes in Oscar 1.6
 Dependency changes
 ------------------
 
-- Support for Django 1.8, 1.9 and 1.10 have been dropped following the advice
-  from upstream about how best to handle the transition to Django 2.0.
+- Support for Django 1.8, 1.9 and 1.10 have been dropped in line with the
+  Django project recommendation for third party apps.
