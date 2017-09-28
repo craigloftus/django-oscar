@@ -956,11 +956,12 @@ class AbstractProductAttributeValue(models.Model):
             # Need to look up instance of AttributeOption
             new_value = self.attribute.option_group.options.get(
                 option=new_value)
-
-        if self.attribute.is_multi_option:
+        elif self.attribute.is_multi_option:
             getattr(self, attr_name).set(new_value)
-        else:
-            setattr(self, attr_name, new_value)
+            return
+
+        setattr(self, attr_name, new_value)
+        return
 
     value = property(_get_value, _set_value)
 
