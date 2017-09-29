@@ -1,7 +1,7 @@
 from django import VERSION
 from django.urls import reverse_lazy
 
-if VERSION > (1, 11):
+if VERSION > (2, 0):
     from django.urls.resolvers import URLPattern
 else:
     from django.urls.resolvers import RegexURLPattern as URLPattern
